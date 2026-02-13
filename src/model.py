@@ -49,3 +49,21 @@ class PlayerBehaviorNextAction(nn.Module):
         h = self.backbone(x)          # [batch, hidden_dim]
         logits = self.classifier(h)   # [batch, num_actions+1]
         return logits
+
+
+class PlayerBehaviorClassifier(nn.Module):
+    def __init__(self, num_actions, num_classes, embedding_dim=32, hidden_dim=64):
+        super().__init__()
+
+        self.backbone = PlayerBehaviourLSTM(
+            num_actions=num_actions,
+            embedding_dim=embedding_dim,
+            hidden_dim=hidden_dim
+        )
+
+        self.classifier = nn.Linear(hidden_dim, num_classes)
+
+    def forward(self, x):
+        h = self.backbone(x)
+        logits = self.classifier(h)
+        return logits
