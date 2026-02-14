@@ -82,23 +82,23 @@ Embeddings reduced to 2D using **PCA**:
    conda activate pytorch_dl
 2. **Run notebooks in order:**
 
-01_data_exploration.ipynb
+   01_data_exploration.ipynb
 
-02_sequence_building.ipynb
+   02_sequence_building.ipynb
 
-03_lstm_model.ipynb
+   03_lstm_model.ipynb
 
-04_behavior_visualization.ipynb
+   04_behavior_visualization.ipynb
 
 ---
-'''
+```
 Player_Behavior_Sequence_Modeling
 |
 ├── data/       # Synthetic player logs & .npy tensors
 ├── notebooks/  # Structured experimentation phases
 ├── src/        # Model definitions (LSTM Backbone + Heads)
 └── results/    
-'''
+```
 ---
 ##🏆 Final Takeaway
 This project demonstrates end-to-end ML pipeline construction, behavioral sequence modeling, 
