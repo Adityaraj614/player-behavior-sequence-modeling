@@ -91,13 +91,14 @@ Embeddings reduced to 2D using **PCA**:
 04_behavior_visualization.ipynb
 
 ---
-
-Player Behavior Sequence Modeling
+'''
+Player_Behavior_Sequence_Modeling
+|
 ├── data/       # Synthetic player logs & .npy tensors
 ├── notebooks/  # Structured experimentation phases
 ├── src/        # Model definitions (LSTM Backbone + Heads)
 └── results/    
-
+'''
 ---
 ##🏆 Final Takeaway
 This project demonstrates end-to-end ML pipeline construction, behavioral sequence modeling, 
